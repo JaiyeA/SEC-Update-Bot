@@ -94,6 +94,8 @@ function updateCheck(year){
                       console.log('Email sent at: ' + new Date());
                     }
                 })
+                //update the stored dates
+                company.lastChecked = company.latestDates
             }  
         })
         
