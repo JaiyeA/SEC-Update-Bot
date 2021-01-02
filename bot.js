@@ -42,7 +42,7 @@ async function getData(CIK,year){
         var updateData = []//where we put the dates of the latest filings
         tableElements.forEach((el)=>{
             el = el.slice(-10)
-            if(el.slice(0,4) == year)//slice to get the year from the parsed data, which would be the first for cahracters in the string
+            if(el.slice(0,4) == year || el.slice(0,4) == "2020")//slice to get the year from the parsed data, which would be the first for cahracters in the string
                 updateData.push(el)
         })
         data = updateData
