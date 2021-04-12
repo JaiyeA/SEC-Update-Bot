@@ -1,5 +1,5 @@
 # SEC Update Bot
-A bot that constantly checks the SEC for new filings of any public company you choose.
+A bot that constantly checks the SEC for new filings of any public company you choose and sends an email notifying you about a new recent filing.
 
 ## How to run it
 In order to run the bot you have to:
