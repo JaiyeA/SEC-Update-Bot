@@ -42,7 +42,7 @@ async function getData(CIK){
     await axios.get(fetchlink)
     .then((response)=> {//get filing dates and the form types for each date
         data.latestDates = response.data.filings.recent.acceptanceDateTime.slice(0,2)
-        data.formTypes = response.data.filings.recent.form.slice(0,2)
+        //data.formTypes = response.data.filings.recent.form.slice(0,2)
     })
     .catch((error)=>{//if there's something wrong with the program or if the sec website is down
         console.log(error)
